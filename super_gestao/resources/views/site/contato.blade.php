@@ -9,7 +9,10 @@
         <div class="contato_contato">
             <div class="informacao-pagina">
                     <div class="contato-principal">
-                        @component('site.layouts._components/form_contato') @endcomponent
+                        @component('site.layouts._components/form_contato', ['classe' => 'borda-preta'])
+                            <p>Obrigado pelo o contato</p>
+                            <p>Odonto Premier agradece</p>
+                        @endcomponent
                     </div>
                 </div>  
             </div>

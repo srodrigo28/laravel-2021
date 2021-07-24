@@ -5,4 +5,5 @@
 # php artisan make:controller SobreNosController
 # php artisan make:controller ContatoController
 # php artisan make:controller TesteController
+# php artisan make:model SiteContato -m // -m para criar a migration
 # php artisan view:clear
