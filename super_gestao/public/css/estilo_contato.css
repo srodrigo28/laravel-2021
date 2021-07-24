@@ -1,0 +1,12 @@
+.contato_contato{
+    width: 30%;
+    float: right;  height: 100vh;
+
+}
+.contato_slide{
+    background-color: tomato;
+    width: 68%; height: 37vh;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+
+}
