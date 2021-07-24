@@ -1,11 +1,17 @@
-# Database
-    # https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21441882#overview
-# outros
+<?php
 
-# outros
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-
- public function up()
+class CreateProdutosTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->id();
@@ -18,3 +24,14 @@
             $table->timestamps();
         });
     }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('produtos');
+    }
+}

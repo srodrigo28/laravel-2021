@@ -1,5 +1,5 @@
-{{ $slot }}
-{{ $classe }}
+{{-- {{ $slot }}
+{{ $classe }} --}}
 <form action="{{ route('site.contato') }}" method="post">
     @csrf
     <input name="nome" type="text" placeholder="Nome" class="{{$classe}}">

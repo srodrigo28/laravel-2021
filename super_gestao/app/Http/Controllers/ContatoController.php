@@ -10,7 +10,7 @@ class ContatoController extends Controller
     public function contato(){
         //echo 'Contato';
 
-        var_dump($_POST);
+        //var_dump($_POST);
         return view('site.contato', ['titulo' => 'Contato']);
     }
     /** Aqui retornamos dados dos controller */

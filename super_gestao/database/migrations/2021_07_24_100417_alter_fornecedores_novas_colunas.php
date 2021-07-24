@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSiteContatosTable extends Migration
+class AlterFornecedoresNovasColunas extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateSiteContatosTable extends Migration
      */
     public function up()
     {
-        Schema::create('site_contatos', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('fornecedores', function (Blueprint $table) {
+            $table->string('uf', 2);
+            $table->string('email', 80);
         });
     }
 
@@ -26,6 +26,8 @@ class CreateSiteContatosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('site_contatos');
+        Schema::table('fornecedores', function (Blueprint $table) {
+            $table->dropColumn(['uf', 'email']);
+        });
     }
 }
