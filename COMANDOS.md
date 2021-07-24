@@ -7,3 +7,5 @@
 # php artisan make:controller TesteController
 # php artisan make:model SiteContato -m // -m para criar a migration
 # php artisan view:clear
+
+# php artisan migrate
