@@ -14,6 +14,7 @@
 # php artisan make:migration create_fornecedores_table // $table->string('nome', 50);
 # php artisan make:migration alter_fornecedores_novas_colunas
 # php artisan make:migration create_produtos_table
+# php artisan make:migration create_produto_detalhes_table
  
 
 # php artisan view:clear
